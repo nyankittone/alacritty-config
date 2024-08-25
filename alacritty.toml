@@ -1,0 +1,38 @@
+import = [
+    "~/.config/alacritty/theme.toml",
+]
+
+live_config_reload = true
+ipc_socket = true
+
+[scrolling]
+history = 25000
+
+[window]
+dimensions = {columns = 136, lines = 42}
+position = "None"
+resize_increments = true
+opacity = 0.88
+decorations_theme_variant = "Dark"
+title = "I hate this terminal emulator..."
+dynamic_title = true
+class = {instance = "aaa", general = "bbb"}
+
+[font]
+normal = {family = "JetBrainsMono Nerd Font", style = "Regular"}
+size = 10.5
+
+[cursor]
+style = {shape = "Underline", blinking = "Always"}
+blink_interval = 500
+blink_timeout = 0
+thickness = 0.25
+
+[keyboard]
+bindings = [
+    {key = "Return", mods = "Control|Shift", action = "SpawnNewInstance"}
+]
+
+[env]
+TERM = "xterm-256color"
+
